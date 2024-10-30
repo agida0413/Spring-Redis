@@ -2,7 +2,7 @@ spring:
   profiles:
     default: local
   datasource:
-    url: jdbc:mysql://host.docker.internal:3306/mydb or local
+    url: jdbc:mysql://host.docker.internal:3306/mydb
     username: root
     password: 1234
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -26,10 +26,10 @@ spring:
     activate:
       on-profile: prod
   datasource:
-    url: [rds url]
+    url: jdbc:mysql://instargram-db.clkiokmwwff6.ap-northeast-2.rds.amazonaws.com:3306/mydb
     username: admin
     password: password
   data:
     redis:
-      host: [elastic cache url]
+      host: instagram-cache-server.hsxmhb.ng.0001.apn2.cache.amazonaws.com
       port: 6379
