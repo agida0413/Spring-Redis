@@ -26,10 +26,10 @@ spring:
     activate:
       on-profile: prod
   datasource:
-    url: jdbc:mysql://instargram-db.clkiokmwwff6.ap-northeast-2.rds.amazonaws.com:3306/mydb
+    url: rds url
     username: admin
     password: password
   data:
     redis:
-      host: instagram-cache-server.hsxmhb.ng.0001.apn2.cache.amazonaws.com
+      host: esk url
       port: 6379
